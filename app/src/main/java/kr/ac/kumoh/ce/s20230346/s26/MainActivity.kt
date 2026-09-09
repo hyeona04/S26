@@ -1,4 +1,4 @@
-package kr.ac.kumoh.ce.s20260000.s26
+package kr.ac.kumoh.ce.s20230346.s26
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -17,7 +17,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import kr.ac.kumoh.ce.s20230346.s26.ui.theme.S26Theme
-import org.w3c.dom.Text
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,7 +43,7 @@ fun MainScreen() {
 
 @Composable
 fun MyLinearLayout(modifier: Modifier = Modifier) {
-    Column(modifier = modifier) {
+    Column(modifier = modifier.fillMaxWidth()) {
         Text(text = "안녕하세요",
             modifier = Modifier.background(Color.Yellow)
                 .padding(8.dp)
@@ -66,8 +65,7 @@ fun MyLinearLayout(modifier: Modifier = Modifier) {
             )
     }
 }
-@Composable
-fun Text()
+
 //@Composable
 //fun Greeting(name: String, modifier: Modifier = Modifier) {
 //    Text(
