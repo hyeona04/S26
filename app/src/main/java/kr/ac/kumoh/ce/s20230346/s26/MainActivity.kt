@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -29,7 +30,10 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+]
 
+@Composable
+fun MyLi
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
@@ -39,6 +43,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 }
 
 @Preview(showBackground = true)
+
+
 @Composable
 fun GreetingPreview() {
     S26Theme {
